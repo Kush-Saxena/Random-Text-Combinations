@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<div class="container" name="inputDiv">
+    <button class="btn btn-primary" id="nameGenerator" (click)="MakeRandomName()">Click to generate random
+        combinations</button>
+    <br><br>
+
+
+    <textarea class="form-control" id="firstInput" type="text" placeholder="Enter First list of comma separated values"
+        [(ngModel)]="input1"></textarea>
+
+    <textarea class="form-control" id="secondInput" type="text"
+        placeholder="Enter Second list of comma separated values" [(ngModel)]="input2"></textarea>
+<hr>
+    <h2>{{randomGeneratedName}}</h2>
+
+</div>
